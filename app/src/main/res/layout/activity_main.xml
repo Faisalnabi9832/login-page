@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="16dp"
+    android:background="#CC000066"
     tools:context=".MainActivity">
 
     <ImageView
@@ -15,28 +16,64 @@
         android:layout_height="229dp"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
+        android:background="@color/white"
         android:layout_marginBottom="44dp"
         android:src="@drawable/img"
         tools:layout_editor_absoluteX="131dp"
         tools:layout_editor_absoluteY="28dp" />
 
     <EditText
-        android:id="@+id/editTextUsername"
+        android:id="@+id/editTextforfirstname"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:hint="Enter First Name"
+        android:layout_marginBottom="20dp"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="274dp" />
+    <EditText
+        android:id="@+id/editTextforlastname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter last Name"
+        android:background="@color/white"
         android:layout_marginBottom="20dp"
         android:inputType="text"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="274dp" />
 
     <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Email"
+        android:background="@color/white"
+        android:layout_marginBottom="20dp"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+
+    <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_below="@id/editTextUsername"
         android:hint="Password"
+        android:background="@color/white"
         android:inputType="textPassword"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="274dp" />
+    <EditText
+        android:id="@+id/editTextPasswordconfirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/editTextUsername"
+        android:hint="confirm Password"
+        android:inputType="textPassword"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="274dp" />
 
@@ -44,9 +81,10 @@
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="50dp"
         android:layout_below="@id/editTextPassword"
         android:text="Sign up"
+        android:background="@color/black"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="411dp" />
 
@@ -58,7 +96,9 @@
         android:layout_height="wrap_content"
         android:text="already have an account? sign in here"
         android:textAlignment="center"
-        android:textColor="@color/black" />
+        android:textSize="15dp"
+        android:textColor="@color/white" />
 
 
 </LinearLayout>
+
